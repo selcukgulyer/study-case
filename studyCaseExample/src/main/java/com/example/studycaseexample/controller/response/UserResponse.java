@@ -20,6 +20,7 @@ import java.util.stream.Collectors;
 public class UserResponse {
 
     private String name;
+    private String test;
     private String lastName;
     private LocalDate birth;
     private int age;
@@ -30,6 +31,7 @@ public class UserResponse {
 
     public static UserResponse from(User user) {
         return new UserResponse(
+                "test",
                 user.getName(),
                 user.getLastName(),
                 user.getBirth(),

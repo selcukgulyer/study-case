@@ -25,7 +25,6 @@ public class UserResponse {
     private LocalDate birth;
     private int age;
     private String temp2;
-    private String temp;
     private List<CreateExpenseResponse> expenses;
 
 
@@ -38,7 +37,6 @@ public class UserResponse {
                 user.getBirth(),
                 user.getAge(),
                 "asfdasdas",
-                "asdfasf",
                 user.getExpenses().stream().map(CreateExpenseResponse::from).collect(Collectors.toList())
                 );
     }
